@@ -71,6 +71,17 @@
 
             }
     </script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+    <script>
+		  var OneSignal = window.OneSignal || [];
+		  OneSignal.push(["init", {
+		      appId: "85c6289f-e44a-4495-9613-4d898136d890",
+			autoRegister: true, /* Set to true to automatically prompt visitors */
+			notifyButton: {
+				enable: true /* Set to false to hide */
+			}
+		  }]);
+    </script>
 </HEAD>
 <body>
     <div id="tts" onclick="sayHello();">sayHello</div>
